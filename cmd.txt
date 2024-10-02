@@ -1,0 +1,17 @@
+// créer une image
+docker build -t nom .
+
+// exécuter une conteneur
+docker run -d --name mon-conteneur -p 8080:80 my-app:latest
+
+// afficher les conteneurs en cours d'exécution
+docker ps
+
+// arrêter un conteneur
+docker stop [nom du conteneur ou ID]
+
+// démarrer un conteneur arrêté
+docker start [nom du conteneur ou ID]
+
+// supprimer un conteneur
+docker rm [nom du conteneur ou ID]
